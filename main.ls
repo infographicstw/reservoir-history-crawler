@@ -44,9 +44,9 @@ parse = (data) ->
     rainfall = toValue(item.find("td:nth-of-type(4)").text!)
     income = toValue(item.find("td:nth-of-type(5)").text!)
     output = toValue(item.find("td:nth-of-type(6)").text!)
-    level = toValue(item.find("td:nth-of-type(10)").text!)
-    volume = toValue(item.find("td:nth-of-type(11)").text!)
-    percent = toValue(item.find("td:nth-of-type(12)").text!)
+    level = toValue(item.find("td:nth-of-type(9)").text!)
+    volume = toValue(item.find("td:nth-of-type(10)").text!)
+    percent = toValue(item.find("td:nth-of-type(11)").text!)
     obj = { name, capacity, rainfall, income, output, level, volume, percent }
     hash[name] = obj
   return hash
